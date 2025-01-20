@@ -26,8 +26,8 @@ const useJobs = () => {
       } else {
         await addJob(job);
       }
-      loadJobs(); // Recharge la liste des jobs après ajout/mise à jour
-      setIsModalOpen(false); // Ferme la modale
+      loadJobs(); 
+      setIsModalOpen(false); 
     } catch (error) {
       alert("Erreur lors de la soumission du job.");
     }
@@ -36,7 +36,7 @@ const useJobs = () => {
   const handleDeleteJob = async (jobId) => {
     try {
       await deleteJob(jobId);
-      loadJobs(); // Recharge la liste des jobs après suppression
+      loadJobs(); 
     } catch (error) {
       alert("Erreur lors de la suppression du job.");
     }
@@ -48,7 +48,7 @@ const useJobs = () => {
     selectedJob,
     setIsModalOpen,
     setSelectedJob,
-    handleJobSubmit, // Assurez-vous que cette fonction est bien retournée
+    handleJobSubmit, 
     handleDeleteJob,
   };
 };

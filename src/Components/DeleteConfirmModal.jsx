@@ -1,4 +1,4 @@
-// src/Components/DeleteConfirmModal.jsx
+
 import React from "react";
 
 const DeleteConfirmModal = ({ isOpen, onClose, onDelete, jobId }) => {
@@ -11,15 +11,15 @@ const DeleteConfirmModal = ({ isOpen, onClose, onDelete, jobId }) => {
         <p className="mb-6">Do you really want to delete this job? </p>
         <div className="flex justify-between">
           <button
-            onClick={() => onClose()} // Ferme la modale sans rien faire
+            onClick={() => onClose()} 
             className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md"
           >
             Cancel
           </button>
           <button
             onClick={() => {
-              onDelete(jobId); // Appelle la fonction de suppression
-              onClose(); // Ferme la modale après la suppression
+              onDelete(jobId); 
+              onClose(); 
             }}
             className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md"
           >

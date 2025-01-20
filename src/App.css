@@ -1,4 +1,4 @@
-/* Styles globaux spécifiques au projet */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -14,15 +14,15 @@
 
 /* Styles pour les en-têtes du tableau */
 .table-header {
-  background-color: #f3f4f6; /* Fond gris clair pour les en-têtes */
+  background-color: #f3f4f6; 
   font-weight: 600;
-  color: #374151; /* Couleur de texte gris foncé */
+  color: #374151; 
 }
 
 /* Styles pour les cellules du tableau */
 .table-cell {
   padding: 12px 16px;
-  border-bottom: 1px solid #e5e7eb; /* Bordure grise entre les lignes */
+  border-bottom: 1px solid #e5e7eb; 
 }
 
 /* Styles pour les boutons d'action */
@@ -33,24 +33,24 @@
 }
 
 .action-button.update {
-  background-color: #3b82f6; /* Bleu pour le bouton Update */
+  background-color: #3b82f6; 
   color: white;
 }
 
 .action-button.update:hover {
-  background-color: #2563eb; /* Bleu plus foncé au survol */
+  background-color: #2563eb; 
 }
 
 .action-button.delete {
-  background-color: #ef4444; /* Rouge pour le bouton Delete */
+  background-color: #ef4444;
   color: white;
 }
 
 .action-button.delete:hover {
-  background-color: #dc2626; /* Rouge plus foncé au survol */
+  background-color: #dc2626; 
 }
 
-/* Styles pour le formulaire */
+
 .form-container {
   background-color: white;
   padding: 24px;
@@ -61,15 +61,15 @@
 .form-input {
   width: 100%;
   padding: 8px 12px;
-  border: 1px solid #d1d5db; /* Bordure grise */
+  border: 1px solid #d1d5db; 
   border-radius: 4px;
   margin-bottom: 16px;
 }
 
 .form-input:focus {
   outline: none;
-  border-color: #3b82f6; /* Bordure bleue au focus */
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); /* Effet de focus */
+  border-color: #3b82f6; 
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); 
 }
 
 .form-button {
@@ -79,22 +79,22 @@
 }
 
 .form-button.save {
-  background-color: #10b981; /* Vert pour le bouton Save */
+  background-color: #10b981; 
   color: white;
 }
 
 .form-button.save:hover {
-  background-color: #059669; /* Vert plus foncé au survol */
+  background-color: #059669; 
 }
 
 .form-button.cancel {
-  background-color: #ef4444; /* Rouge pour le bouton Cancel */
+  background-color: #ef4444; 
   color: white;
-  position: absolute; /* Positionner de manière absolue par rapport au conteneur */
-  top: 10px; /* Ajuster la distance du bord supérieur */
-  right: 10px; /* Ajuster la distance du bord droit */
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
 }
 
 .form-button.cancel:hover {
-  background-color: #ef4444; /* Gris plus foncé au survol */
+  background-color: #ef4444; 
   }

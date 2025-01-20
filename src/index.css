@@ -2,20 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Styles personnalisés */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f9fafb; /* Couleur de fond légère */
+  background-color: #f9fafb; 
 }
 
-/* Styles pour les boutons */
+
 button {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-/* Styles pour les liens */
+
 a {
-  color: #3b82f6; /* Couleur bleue pour les liens */
+  color: #3b82f6; 
   text-decoration: none;
 }
 
