@@ -4,15 +4,16 @@ const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
-      <div className="bg-white p-6 rounded shadow-lg w-full max-w-md">
-        {children}
+    <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
+      <div className="relative bg-white p-6 rounded-lg shadow-lg w-full max-w-lg mx-4">
+        {/* Bouton Close en haut à droite */}
         <button
           onClick={onClose}
-          className="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded mt-4"
+          className="absolute top-3 right-3 text-white bg-red-500 hover:bg-red-600 rounded-full w-8 h-8 flex items-center justify-center focus:outline-none"
         >
-          Close
+          X
         </button>
+        {children}
       </div>
     </div>
   );

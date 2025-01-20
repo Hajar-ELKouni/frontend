@@ -1,13 +1,16 @@
+// App.jsx
 import React from "react";
-import JobListPage from "./pages/JobListPage";
-import "./App.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Styles nécessaires pour React Toastify
+import JobListPage from "./pages/JobListPage"; // Importer votre page de liste de jobs
 
-const App = () => {
+function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="App">
       <JobListPage />
+      <ToastContainer position="top-right" autoClose={5000} hideProgressBar newestOnTop closeButton />
     </div>
   );
-};
+}
 
 export default App;
